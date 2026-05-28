@@ -27,10 +27,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
 
       - name: 依存パッケージをインストール
-        run: npm ci
+        run: npm install
 
       - name: AI新聞を生成・配信
         env:
